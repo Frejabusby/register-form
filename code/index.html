@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Form assignment</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <section class="container">
+      <form class="register-form" action="http://httpbin.org/anything" method="post">
+        <h1>Register here</h1>
+
+        <div class="register-input">
+          <input type="text" name="firstName" value="" placeholder="First name" autofocus>
+        </div>
+
+        <div class="register-input">
+          <input type="text" name="lastName" value="" placeholder="Last name">
+        </div>
+
+        <div class="register-input">
+          <input type="email" name="email" value="" placeholder="Email">
+        </div>
+
+        <div class="register-input">
+          <input type="password" name="password" value="" placeholder="Choose password">
+        </div>
+
+        <div class="register-input">
+          <span>Gender</span>
+          <label>
+            <input type="radio" name="gender" value="female">
+            Female
+          </label>
+          <label>
+            <input type="radio" name="gender" value="male">
+            Male
+          </label>
+          <label>
+            <input type="radio" name="gender" value="other" checked>
+            Other
+          </label>
+        </div>
+        <div class="register-input">
+          <span>Interests</span>
+          <label>
+            <input type="checkbox" name="interests" value="coding">
+            Coding
+          </label>
+          <label>
+            <input type="checkbox" name="interests" value="play guitar">
+            Play guitar
+          </label>
+          <label>
+            <input type="checkbox" name="interests" value="running">
+            Running
+          </label>
+        </div>
+        <!-- <input type="submit" name="submit" value="submit"> -->
+        <button class="submit-button" type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+
+</html>
